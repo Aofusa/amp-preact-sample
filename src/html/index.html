@@ -1,0 +1,29 @@
+<!doctype html>
+<html ⚡ lang="ja">
+
+<head>
+    <%= require('html-loader!./template/head.html') %>
+
+    <!-- AMP Script -->
+    <script async nonce="314159265358979323846264338327950" custom-element="amp-script"
+        src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+</head>
+
+<body>
+    <%= require('html-loader!./template/header.html') %>
+
+    <main id="content">
+        <amp-script layout="container" src="./js/bundle.js" sandbox="allow-forms">
+            <div id="root">
+                <button id="hello">Insert Hello World!</button>
+            </div>
+
+            <amp-position-observer id="position-observer" layout="nodisplay">
+            </amp-position-observer>
+        </amp-script>
+    </main>
+
+    <%= require('html-loader!./template/footer.html') %>
+</body>
+
+</html>
