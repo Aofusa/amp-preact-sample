@@ -11,6 +11,7 @@ AMP と pReact を組み合わせてみたサンプル
 npm install
 
 # ビルド
+# ./dist 配下にホスト可能なファイルが生成されます
 npm run build
 
 # テストサーバの起動
